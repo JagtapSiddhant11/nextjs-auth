@@ -12,7 +12,7 @@ export default function ForgetPassword(){
     const router = useRouter()
 
 
-    const [email, setEmail] = useState("appa@gmail.com")
+    const [email, setEmail] = useState("");
 
 
     const submitHandler = async() =>{
