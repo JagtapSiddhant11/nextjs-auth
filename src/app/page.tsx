@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { verify } from "crypto";
 
 export default function Home() {
   return (
@@ -48,6 +50,11 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+
+
+        <h1 className="bg-gray-600 text-xl text-emerald-300 p-2 ">Hello!</h1>
+        <Link href="/profile
+        ">Profile</Link>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
@@ -96,6 +103,9 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+
+
+  
     </div>
   );
 }
