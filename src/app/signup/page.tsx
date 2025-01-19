@@ -45,9 +45,10 @@ export default function SignupPage() {
 	}, [user]);
 
 	return (
-		<div className="flex flex-col items-center justify-center min-h-screen py-2 ">
-			<h1>{loading ? "Processing" : "Signup"}</h1>
-			<hr />
+		<div className="flex  items-center justify-center min-h-screen  ">
+			<div className="min-h-fit flex flex-col  border p-8 gap-1">
+			<h1 className="text-3xl text-center">{loading ? "Processing" : "Signup"}</h1>
+			{/* <hr /> */}
 			<label htmlFor="username">username</label>
 			<input
 				className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
@@ -82,7 +83,8 @@ export default function SignupPage() {
 				{buttonDisabled ? "No signup" : "Signup"}
 			</button>
 
-			<Link href="/login">Visit login page</Link>
+			<Link href="/login" className="text-center">Visit login page</Link>
+			</div>
 		</div>
 	);
 }
